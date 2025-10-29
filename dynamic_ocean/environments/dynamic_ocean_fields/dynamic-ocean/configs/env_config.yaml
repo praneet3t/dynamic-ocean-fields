@@ -1,0 +1,12 @@
+# configs/env_config.yaml
+patch_size: 3
+max_steps_factor: 2  # multiplier of H*W to derive default max steps
+weights:
+  - 0.3
+  - 0.3
+  - 1.0
+smooth_sigma: 1.0
+obstacle_prob: 0.03
+grid:
+  H: 64
+  W: 64
