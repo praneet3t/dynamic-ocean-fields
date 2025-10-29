@@ -1,0 +1,8 @@
+gymnasium==0.28.1
+numpy>=1.23
+scipy>=1.9
+xarray>=2023.0
+netcdf4
+matplotlib
+pyyaml
+pytest
