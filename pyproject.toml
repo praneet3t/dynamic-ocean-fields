@@ -1,37 +1,27 @@
 [build-system]
-requires = ["setuptools>=45", "wheel"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "dynamic-ocean-fields"
+name = "dynamic_ocean"
 version = "0.1.0"
-description = "A reinforcement learning environment for ship navigation in dynamic ocean conditions"
+description = "Dynamic Ocean Fields - grid cost routing environment"
 readme = "README.md"
 requires-python = ">=3.8"
-license = {text = "MIT"}
+keywords = ["ocean", "routing", "rl", "environment"]
 authors = [
-    {name = "Dynamic Ocean Fields Team"}
-]
-keywords = ["reinforcement-learning", "gymnasium", "ocean", "navigation", "pathfinding"]
-classifiers = [
-    "Development Status :: 3 - Alpha",
-    "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: MIT License",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
+  { name = "praneet", email = "praneet.3t@gmail.com" }
 ]
 
 dependencies = [
-    "gymnasium>=0.29.0",
-    "numpy>=1.21.0",
-    "matplotlib>=3.5.0",
-    "pyyaml>=6.0",
-    "xarray>=2023.0.0",
+  "numpy>=1.23",
+  "gymnasium==0.28.1",
+  "scipy>=1.9",
+  "xarray",
+  "matplotlib",
+  "verifiers"
 ]
 
-[project.optional-dependencies]
-dev = [
-    "pytest>=7.0.0",
-    "jupyter>=1.0.0",
-]
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["dynamic_ocean"]

@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dynamic-ocean-fields-env"
+version = "0.1.0"
+description = "Prime env wrapper for dynamic ocean fields"
+readme = "README.md"
+requires-python = ">=3.8"
+
+dependencies = [
+  "dynamic_ocean",
+  "verifiers"
+]
